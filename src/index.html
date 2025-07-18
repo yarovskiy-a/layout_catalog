@@ -1,3 +1,4 @@
+<!-- #region header -->
 <!doctype html>
 <html lang="en">
   <head>
@@ -20,8 +21,97 @@
       href="styles/index.scss"
     />
   </head>
+  <!-- #endregion -->
+  <body class="body">
+    <header class="container">
+      <a href="index.html">
+        <img
+          class="header_logo"
+          src="images/Menu/moyo_1.svg"
+          alt="moyo logo"
+        />
+      </a>
+      <nav>
+        <ul>
+          <li class="box">
+            <a
+              class="is-active"
+              href="index.html"
+            >
+              apple
+            </a>
+          </li>
 
-  <body>
-    <h1>Catalog</h1>
+          <li class="box">
+            <a href="index.html">Samsung</a>
+          </li>
+
+          <li class="box">
+            <a href="index.html">Smartphones</a>
+          </li>
+
+          <li class="box">
+            <a
+              href="index.html"
+              data-qa="hover"
+            >
+              Laptops & Computers
+            </a>
+          </li>
+
+          <li class="box">
+            <a href="index.html">Gadgets</a>
+          </li>
+
+          <li class="box">
+            <a href="index.html">Tablets</a>
+          </li>
+
+          <li class="box">
+            <a href="index.html">Photo</a>
+          </li>
+
+          <li class="box">
+            <a href="index.html">Video</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- #region article -->
+
+    <article>
+      <div
+        class="product-card"
+        data-qa="card"
+      >
+        <div class="product-card__img"></div>
+        <div class="product-card__name">
+          APPLE A1419 iMac 27" Retina 5K Monoblock (MNED2UA/A)
+        </div>
+        <div class="product-card__product-code">Product code: 195434</div>
+
+        <div class="wrapper">
+          <div class="stars">
+            <div class="stars__star"></div>
+            <div class="stars__star"></div>
+            <div class="stars__star"></div>
+            <div class="stars__star"></div>
+            <div class="stars__star"></div>
+          </div>
+          <div class="wrapper__reviews">Reviews: 5</div>
+        </div>
+        <div class="product-card__price-block">
+          <div class="product-card__text">Price:</div>
+          <div class="product-card__price">$2,199</div>
+        </div>
+        <button
+          class="product-card__button"
+          data-qa="hover"
+        >
+          Buy
+        </button>
+      </div>
+    </article>
+    <!-- #endregion -->
   </body>
 </html>
