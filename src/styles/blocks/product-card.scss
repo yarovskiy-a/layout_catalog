@@ -120,3 +120,8 @@
     @include font-of-family;
   }
 }
+
+.product-card:hover {
+  transform: scale(1.2);
+  transition-duration: 300ms;
+}
