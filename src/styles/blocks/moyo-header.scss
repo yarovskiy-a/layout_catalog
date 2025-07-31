@@ -1,8 +1,12 @@
-.container {
-  //  position: absolute;
+.header {
+  grid-area: header;
+  width: 100%;
   max-width: 1200px;
   max-height: 60px;
-  padding-right: 50px;
+  margin: 0 auto;
+
+  //  padding-right: 50px;
+
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
@@ -11,10 +15,16 @@
 
   &__header_logo {
     margin-right: auto;
+
     margin-left: 50px;
+
     width: 40px;
     height: 40px;
     order: -1;
+  }
+
+  &__list {
+    margin: 0;
   }
 
   &__box {
@@ -27,11 +37,10 @@
   }
 
   &__nav-link {
-    position: relative;
     height: 60px;
     display: flex;
     align-items: center;
-    justify-content: center;
+
     font-family: Roboto, sans-serif;
     font-size: 12px;
     text-transform: uppercase;
@@ -74,15 +83,16 @@ nav ul {
 }
 
 @media all and (max-width: 1200px) {
-  .container {
+  .header {
     max-width: 1200px;
-    padding-right: 0;
+    margin-left: 0;
   }
 }
 
 @media all and (max-width: 1024px) {
-  .container {
+  .header {
     max-width: 1024px;
+
     padding-right: 50px;
   }
 }

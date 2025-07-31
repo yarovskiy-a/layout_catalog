@@ -77,7 +77,6 @@
     vertical-align: bottom;
 
     @include product-code-color;
-
   }
 
   &__price {
@@ -100,7 +99,7 @@
     width: 166px;
     height: 40px;
     border-radius: 5px;
-    background-color:variables.$product-card-button;
+    background-color: variables.$product-card-button;
     border-style: none;
     color: variables.$main-background-color;
 
@@ -115,31 +114,32 @@
   }
 
   &__button:hover {
-    background-color:variables.$main-background-color;
-    color:variables.$product-card-button;
+    background-color: variables.$main-background-color;
+    color: variables.$product-card-button;
     border: 1px variables.$navigation-link-text-color solid;
 
     @include font-of-family;
   }
 
-
-&:hover &__name {
-  color: variables.$product-card-name-color;
-}
-
-&:hover &__button {
-  background-color:variables.$product-card-button;
-  background-color:variables.$main-background-color;
-}
-
-
-
-&:hover {
-  transform: scale(1.2);
-  transition-duration: 300ms;
-
-  color: variables.$product-card-name-color;
+  &:hover &__name {
+    color: variables.$product-card-name-color;
   }
 
+  &:hover &__button {
+    background-color: variables.$product-card-button;
+    background-color: variables.$main-background-color;
+  }
+
+  &:hover {
+    transform: scale(1.2);
+    transition-duration: 300ms;
+
+    color: variables.$product-card-name-color;
+  }
 }
 
+.wrapper__reviews {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
